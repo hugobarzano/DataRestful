@@ -40,6 +40,33 @@ var routes = Routes {
 		"POST",
 		"/AddDataset",
 		controller.AddDataset,
+	},
+	Route {
+		"UpdateDataset",
+		"PUT",
+		"/UpdateDataset",
+		controller.UpdateDataset,
+	},
+	// Get Dataset by {id}
+	Route {
+		"GetDataset",
+		"GET",
+		"/datasets/{id}",
+		controller.GetDataset,
+	},
+	// Delete Dataset by {id}
+	Route {
+		"DeleteDataset",
+		"DELETE",
+		"/deleteDataset/{id}",
+		controller.DeleteDataset,
+	},
+	// Search Dataset with string
+	Route {
+		"SearchDataset",
+		"GET",
+		"/Search/{query}",
+		controller.SearchDataset,
 	}}
 
 // NewRouter configures a new router to the API

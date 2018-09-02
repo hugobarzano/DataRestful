@@ -2,7 +2,6 @@ package mongo
 
 import (
 	"fmt"
-	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 	"log"
 	"strings"
@@ -121,10 +120,12 @@ func (s Storer) AddDataset(dataset models.Dataset) bool {
 
 // UpdateDataset updates a dataset in the DB
 func (s Storer) UpdateDataset(dataset models.Dataset) bool {
-	session, err := mgo.Dial(SERVER)
+	session, err := NewSession(SERVER)
 	defer session.Close()
 
-	err = session.DB(DBNAME).C(COLLECTION).UpdateId(dataset.ID, dataset)
+
+	//session.Copy().session.DB(DBNAME).C(COLLECTION).UpdateId(dataset.ID, dataset)
+	err = session.Copy().session.DB(DBNAME).C(COLLECTION).UpdateId(dataset.ID, dataset)
 
 	if err != nil {
 		log.Fatal(err)
@@ -138,11 +139,11 @@ func (s Storer) UpdateDataset(dataset models.Dataset) bool {
 
 // DeleteDataset deletes an Dataset
 func (s Storer) DeleteDataset(id int) string {
-	session, err := mgo.Dial(SERVER)
+	session, err := NewSession(SERVER)
 	defer session.Close()
 
 	// Remove dataset
-	if err = session.DB(DBNAME).C(COLLECTION).RemoveId(id); err != nil {
+	if err = session.Copy().session.DB(DBNAME).C(COLLECTION).RemoveId(id); err != nil {
 		log.Fatal(err)
 		return "INTERNAL ERR"
 	}

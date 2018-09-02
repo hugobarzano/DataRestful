@@ -2,7 +2,7 @@ package models
 
 // Product represents an e-comm item
 type Dataset struct {
-	ID     int 	     	 `bson:"_id"`
+	ID     int 	     	 `bson:"_id" json:"_id"`
 	Title  string        `json:"title"`
 	Data   string        `json:"data"`
 }
