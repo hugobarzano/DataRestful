@@ -16,18 +16,32 @@ datarestful-up:
 datarestful-down:
 	docker-compose down
 
-show-datacore-service:
+datarestful-show:
+	docker-compose logs
+
+datacore-service-up:
+	docker-compose up datacore
+
+processor-service-up:
+	docker-compose up pythonprocessor
+
+mongo-service-up:
+	docker-compose up mongodb
+
+datacore-service-down:
+	docker-compose down datacore
+
+processor-service-down:
+	docker-compose down pythonprocessor
+
+mongo-service-down:
+	docker-compose down mongodb
+
+datacore-service-show:
 	docker-compose logs datacore
 
-show-processor-service:
+processor-service-show:
 	docker-compose logs pythonprocessor
 
-show-processor-service:
-		docker-compose logs pythonprocessor
-
-show-mongo-service:
+mongo-service-show:
 		docker-compose logs mongodb
-
-clean:
-	rm -rf ./output/*
-	rm ./generadorP3

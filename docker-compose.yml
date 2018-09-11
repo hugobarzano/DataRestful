@@ -14,8 +14,7 @@ services:
       - "8080:8080"
 
   pythonprocessor:
-    image:
-      - basicpythonprocessor:1.0
+    image: basicpythonprocessor:1.0
     depends_on:
       - datacore
     ports:
