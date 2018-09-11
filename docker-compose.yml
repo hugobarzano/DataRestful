@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+  mongodb:
+    image: mongo:3.5.6
+    ports:
+      - 27019:27017
+
+  datacore:
+    image: datacore:1.0
+    depends_on:
+      - mongodb
+    ports:
+      - "8080:8080"
+
+  pythonprocessor:
+    image:
+      - basicpythonprocessor:1.0
+    depends_on:
+      - datacore
+    ports:
+      - "5000:5000"

@@ -9,7 +9,7 @@ type Session struct {
 }
 
 func NewSession(url string) (*Session,error) {
-	session, err := mgo.Dial("localhost:27017")
+	session, err := mgo.Dial("mongodb://mongodb,127.0.0.1:27017")
 	if err != nil {
 		return nil,err
 	}
@@ -17,7 +17,9 @@ func NewSession(url string) (*Session,error) {
 }
 
 func(s *Session) Copy() *Session {
-	return &Session{s.session.Copy()}
+	current:=&Session{s.session.Copy()}
+	s.session.Close()
+	return current
 }
 
 func(s *Session) GetCollection(db string, col string) *mgo.Collection {

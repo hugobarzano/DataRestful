@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f54ebf9-b472-457a-a327-9381940ecbdd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/datacore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacore/pkg/linux_amd64/datacore/controller.a" beforeDir="false" afterPath="$PROJECT_DIR$/datacore/pkg/linux_amd64/datacore/controller.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacore/pkg/linux_amd64/datacore/models.a" beforeDir="false" afterPath="$PROJECT_DIR$/datacore/pkg/linux_amd64/datacore/models.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacore/pkg/linux_amd64/datacore/mongo.a" beforeDir="false" afterPath="$PROJECT_DIR$/datacore/pkg/linux_amd64/datacore/mongo.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacore/resources/cli/datacli.sh" beforeDir="false" afterPath="$PROJECT_DIR$/datacore/resources/cli/datacli.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacore/src/datacore/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/datacore/src/datacore/controller/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacore/src/datacore/controller/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/datacore/src/datacore/controller/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacore/src/datacore/models/dataset.go" beforeDir="false" afterPath="$PROJECT_DIR$/datacore/src/datacore/models/dataset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacore/src/datacore/mongo/session.go" beforeDir="false" afterPath="$PROJECT_DIR$/datacore/src/datacore/mongo/session.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datacore/src/datacore/mongo/storer.go" beforeDir="false" afterPath="$PROJECT_DIR$/datacore/src/datacore/mongo/storer.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +25,7 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../datacore/src/datacore/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="198">
               <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
@@ -34,8 +43,8 @@
       <file leaf-file-name="storer.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../datacore/src/datacore/mongo/storer.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="252">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -197,9 +206,9 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="-5" width="1293" height="773" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2590799" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.263745" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
@@ -232,6 +241,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../datacore/src/datacore/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../datacore/src/datacore/controller/controller.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../datacore/src/datacore/mongo/storer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../datacore/src/datacore/models/dataset.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../datacore/src/datacore/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -290,14 +327,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../datacore/src/datacore/mongo/storer.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="252">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../datacore/src/datacore/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="198">
           <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>

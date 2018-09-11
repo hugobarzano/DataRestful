@@ -67,6 +67,27 @@ var routes = Routes {
 		"GET",
 		"/Search/{query}",
 		controller.SearchDataset,
+	},
+	Route {
+		"PerformsOperation",
+		"POST",
+		"/Operation/",
+		controller.PerformsOperation,
+	},	Route {
+		"RegisterServices",
+		"POST",
+		"/Services/",
+		controller.AddService,
+	},	Route {
+		"ListServices",
+		"GET",
+		"/Services/",
+		controller.ListServices,
+	},	Route {
+		"DeleteService",
+		"DELETE",
+		"/RemoveService/{id}",
+		controller.DeleteService,
 	}}
 
 // NewRouter configures a new router to the API
