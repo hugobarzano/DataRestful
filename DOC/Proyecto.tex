@@ -382,18 +382,138 @@ Como se especificó anteriormente, Datacore es la pieza encargada de orquestar l
 
 \subsection{Store}
 
-Como capa de persistencia se ha decidido utilizar un modelo NO relaccional, lo que permite almacenar datasets como documentos, esto significa que el enrriquecimiento de las estructuras de datos almacenadas puede realizarse de manera simple. Para ello, se ha decidido utilizar el motor NoSql proporcionado por MongoDB. Este software permite optimizar las busquedas de datasets mediante la indexación de sus colecciones de documentos lo que supone una ganacia en eficiencia con respecto a bases de datos relaccionales orientadas a transaciones de objetos como Postgresql o Mysql.        
+Como capa de persistencia se ha decidido utilizar un modelo NO relaccional, lo que permite almacenar datasets como documentos, esto significa que el enrriquecimiento de las estructuras de datos almacenadas puede realizarse de manera simple. Para ello, se ha decidido utilizar el motor NoSql proporcionado por MongoDB. Este software permite optimizar las busquedas de datasets mediante la indexación de sus colecciones de documentos lo que supone una ganacia en eficiencia con respecto a bases de datos relaccionales orientadas a transaciones de objetos como Postgresql o Mysql.   
 
+\subsection{Virtualización}
 
-\begin{lstlisting}[language=python,caption={make testCase1 }]
+Con el objetivo de facilitar el uso y la distribución de Datarestful como proyecto software se ha decidido utilizar el motor de virtualización ligera docker para ejecutar las piezas (datacore, procesador y store) a nivel subsistema sin necesidad de obligar al desarrollador a instalarse las dependencias necesarias o a tener un servicio de sistema de gestión de bases de datos no relaccionales corriendo en su equipo, pues docker es auto-contenido, dando la posibilidad de generar imagenes funcionales de las piezas mediante el dichero Dockerfile contenido en el directorio raíz de los mismos. A nivel de sistema, se ha decidido utilizar el motor de orquestación para contenedores denominado docker-compose el cual permite al desarrollador orquestar las imagenes de cada una de las piezas para unificar su comportacmiento y presentarse como un único sistema. Docker-compose hace uso del fichero docker-compose.yml en la raíz del proyecto. Este fichero permite definir de una manera clara y sencilla la arquitectura SOA presentada como solución. De manera adicional, no es necesario tener un fichero Dockerfile para mongoDB pues especificando la tag:version de las imganes públicas disponibles en DOCKER-HUB, las imagenes especificadas, que no se encutren generadas localmente en nuestro equipo serán descargadas, listas par funcionar. Para interactuar con el sistema Datarestful se ha preparado un CLI y un Makefile cuyo uso se ejemplificará con un caso de uso. 
 
-#!/usr/bin/env bash
-export GENERATOR_CONFIG=./input/GAC_GENERATOR_CONFIG_1.json
-make build
-./generadorP3
-python ./output/Consumer_class_generated.py
+\section{ Construcción }
 
+Con el objetivo de facilitar el arranque y la administración del sistema, se ha incluido el siquiente Makefile como herramienta de construnción. En dicho Makefile se especifican de manera sencillas las reglas necesarias para construir las imagenes docker necesarias para el sistema, arrancar, debbugear y detener el sistema. De manera adicional, podemos operar cada uno de los servicios que forma la arquitectura SOA de manera independiente a nivel de componente. 
+
+\begin{lstlisting}[language=python,caption={Makefile}]
+#Makefile
+
+build:
+	/usr/local/go/bin/go build ./datacore/src/datacore/main.go
+	mv ./datacore/main ./datacore/build/datacore
+
+docker-datacore:
+	docker build -t datacore:1.0 --no-cache -f ./datacore/Dockerfile .
+
+docker-basicpythonprocessor:
+	docker build -t basicpythonprocessor:1.0 --no-cache -f ./basicPythonProcessor/Dockerfile .
+
+datarestful-up:
+	docker-compose up
+
+datarestful-down:
+	docker-compose down
+
+datarestful-show:
+	docker-compose logs
+
+datacore-service-up:
+	docker-compose up datacore
+
+processor-service-up:
+	docker-compose up pythonprocessor
+
+mongo-service-up:
+	docker-compose up mongodb
+
+datacore-service-down:
+	docker-compose down datacore
+
+processor-service-down:
+	docker-compose down pythonprocessor
+
+mongo-service-down:
+	docker-compose down mongodb
+
+datacore-service-show:
+	docker-compose logs datacore
+
+processor-service-show:
+	docker-compose logs pythonprocessor
+
+mongo-service-show:
+		docker-compose logs mongodb
 \end{lstlisting}
+
+Por ejemplo para generar la imagen docker necsaria para el servicio datacore podemos ejecutar make docker-datacore, lo cual producirá la siguiente salida:
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/make_docker_datacore.png}
+\caption{ make docker-datacore }  
+\end{figure} 
+
+Puesto que el servicio datacore ha sido implementado con GO, lenguaje compilado capaz de generar ejecutables multiplataforma, la construcción de la imagen es rápida, pues no es necesario instalar nada en ella. En el caso de la imagen docker que representa al servicio de procesamiento python, es necesario instalar las dependencias  necesarias, las cuales son establecidas en el Dockerfile que se muestra a continuación. La imagen que representa este fichero puede ser generada mediante make docker-basicpythonprocessor:
+
+\begin{lstlisting}[language=python,caption={basicPythonProcessor/Dockerfile}]
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install -y python
+RUN apt-get install -y python-pip
+RUN pip install --upgrade pip
+
+ENV APP app.py
+ADD ./ /usr/local/bin/
+
+RUN pip install Flask==0.10.1
+RUN pip install requests==2.19.1
+RUN pip install urllib3==1.23
+
+EXPOSE 5000
+ENTRYPOINT python /usr/local/bin/$APP
+\end{lstlisting}
+
+Una vez generadas las imagenes necesarias para los servicios que componen Datarestful podemos levantar la arquitectura completa, para ello se ha definido el siguiente docker-compose.yml
+
+
+\begin{lstlisting}[language=python,caption={docker-compose.yml}]
+
+version: "2"
+
+services:
+  mongodb:
+    image: mongo:3.5.6
+    ports:
+      - 27019:27017
+
+  datacore:
+    image: datacore:1.0
+    depends_on:
+      - mongodb
+    ports:
+      - "8080:8080"
+
+  pythonprocessor:
+    image: basicpythonprocessor:1.0
+    depends_on:
+      - datacore
+    ports:
+      - "5000:5000"
+\end{lstlisting}
+
+
+Como se puede observar, para la capa de persistencia se usa una imagen mongoDB oficial, por lo que no es necesaria generarla mediante un Dockerfile, tan solo es necesaria tenerla presente en nuestro sistema o descargarla en caso contrario. Een este fichero se especifica el comportamiento del sistema, es decir, el orden en el que nuestros servicios han de estar disponibles y el orden en el que nuestros servicios han de detenerse.  El servicio que representa la capa de persistencia (mongoDB) será el primero en arrancar, pues el servicio datacore depende de él, siendo este el siguiente en arrancar. El último servicio en arrancar será el procesador python pues depende de datacore para funcionar. Este es el comportamiento nominal, pues datacore necesita mongoDB ya que es el encargado de de interactuar con la base de datos y el resto de procesadores (en este caso solo uno) necesitan a datacore pues la primera acción que realizan estos servicios es el de registrarse como servicio disponible de procesamiento. Cuando uno de estos servicios sufre un fallo y se detiene, se eliminará de la colección de servicios disponibles para el ususario, pues no será capaz de atender peticiones de ninguna clase. Datarestful puede ser levantado mediante make datarestful-up 
+
+
+
+
+Se puede apreciar que todos los logs de los servicios que acabamos de levantar se muestran por la misma salida estandar, lo que puede dificultar las tareas debug, para ello, podemos consultar los logs de cada servicio de manera independiente, por ejemplo con make datacore-service-show es posible chequear los logs del servicio datacore:
+
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/datacore-service-show.png}
+\caption{ make datacore-service-show }  
+\end{figure} 
+
+
 
 
 

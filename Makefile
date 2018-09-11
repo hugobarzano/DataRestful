@@ -5,10 +5,10 @@ build:
 	mv ./datacore/main ./datacore/build/datacore
 
 docker-datacore:
-	docker build -t datacore:1.0 --no-cache -f ./datacore/Dockerfile .
+	cd ./datacore && docker build -t datacore:1.0 --no-cache -f Dockerfile .
 
 docker-basicpythonprocessor:
-	docker build -t basicpythonprocessor:1.0 --no-cache -f ./basicPythonProcessor/Dockerfile .
+	cd ./basicPythonProcessor && ls && docker build -t basicpythonprocessor:1.0 -f Dockerfile .
 
 datarestful-up:
 	docker-compose up

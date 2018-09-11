@@ -22,5 +22,7 @@
 \contentsline {subsection}{\numberline {4.4.1}Procesadores}{19}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Datacore}{19}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Store}{19}{subsection.4.4.3}
-\contentsline {chapter}{\numberline {5}Anexo}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}generator.py}{23}{section.5.1}
+\contentsline {subsection}{\numberline {4.4.4}Virtualizaci\IeC {\'o}n}{20}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5} Construcci\IeC {\'o}n }{20}{section.4.5}
+\contentsline {chapter}{\numberline {5}Anexo}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}generator.py}{27}{section.5.1}

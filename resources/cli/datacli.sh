@@ -1,17 +1,12 @@
 #!/usr/bin/env bash
-
 HOST=localhost
 PORT=8080
-
-
-
 
 function Datarestful_index() {
   curl -X GET  \
     "http://$HOST:$PORT/" \
     -H 'Content-Type: application/json' \
     -H 'Accept: application/json'
-
 }
 
 function Datarestful_addDataset() {
@@ -73,7 +68,7 @@ function Datarestful_listservices() {
     -H 'Accept: application/json'
 }
 
-function Datarestfulrestful_operation() {
+function Datarestful_operation() {
   ID=$1
   VALUE=$2
   OPE=$3
@@ -89,5 +84,3 @@ function Datarestfulrestful_operation() {
 	    "service_url":  "'URL'"
     }'
 }
-
-

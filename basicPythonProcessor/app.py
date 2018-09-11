@@ -8,12 +8,14 @@ import json
 import urllib2
 import requests
 
-from test import *
 import sys
+import time
 
 
 from operatorBasic import Calc
-import time
+from test import *
+
+
 
 app = Flask(__name__)
 
@@ -68,8 +70,6 @@ def basicOperator():
 
 
 
-
-
 if __name__ == '__main__':
 
     if TestBasicSum() is False:
@@ -83,8 +83,11 @@ if __name__ == '__main__':
 
     print "\n\n[operatorBasic SERVICE] Ready to Roll"
 
-    SERVICE_URL = os.getenv('SERVICE_URL',"http://basic:5000/basicOperator" )
-    DATARESTFUL_URL=os.getenv('DATARESTFUL_URL',"http://localhost:8080")
+    SERVICE_URL = os.getenv('SERVICE_URL',"http://127.0.0.1:5000/basicOperator" )
+    DATARESTFUL_URL=os.getenv('DATARESTFUL_URL',"http://datacore:8080")
+
+    print SERVICE_URL
+    print DATARESTFUL_URL
 
     RegisterServiceToDataresful(SERVICE_URL,DATARESTFUL_URL)
     app.run(host= '0.0.0.0',port=5000)
