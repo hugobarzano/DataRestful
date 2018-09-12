@@ -83,8 +83,11 @@ if __name__ == '__main__':
 
     print "\n\n[operatorBasic SERVICE] Ready to Roll"
 
-    SERVICE_URL = os.getenv('SERVICE_URL',"http://127.0.0.1:5000/basicOperator" )
-    DATARESTFUL_URL=os.getenv('DATARESTFUL_URL',"http://datacore:8080")
+    #SERVICE_URL = os.getenv('SERVICE_URL',"http://pythonprocessor:5000/basicOperator" )
+    #DATARESTFUL_URL=os.getenv('DATARESTFUL_URL',"http://datacore:8080")
+
+    SERVICE_URL = os.getenv('SERVICE_URL',"http://localhost:5000/basicOperator" )
+    DATARESTFUL_URL=os.getenv('DATARESTFUL_URL',"http://localhost:8080")
 
     print SERVICE_URL
     print DATARESTFUL_URL

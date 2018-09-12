@@ -1,9 +1,27 @@
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Regiones de Diponibilidad }}{11}{figure.2.1}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitectura SOA }}{16}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces make docker-datacore }}{21}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces make datacore-service-show }}{23}{figure.4.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Arquitectura SOA }}{14}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces make docker-datacore }}{20}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces make datarestful-up }}{22}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces make datacore-service-show }}{22}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces make processor-service-show }}{23}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces make datarestful-down}}{23}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces cli }}{25}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Step1- http://\$HOST:\$PORT/Services/ }}{25}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Step 1: http://\$HOST:\$PORT/Services/ }}{26}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces make datacore-service-show }}{26}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Step 2: http://\$HOST:\$PORT/ }}{26}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Step 2: http://\$HOST:\$PORT/ }}{27}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Step 2: http://\$HOST:\$PORT/ }}{27}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Step 2: http://\$HOST:\$PORT/datasets/\$ID }}{27}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Step 2: http://\$HOST:\$PORT/Search/\$T }}{27}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Step 2: http://\$HOST:\$PORT/UpdateDataset }}{28}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Step 2: http://\$HOST:\$PORT/deleteDataset/\$ID }}{28}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Step 3: http://\$HOST:\$PORT/Operation/ }}{29}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Step 3: http://\$HOST:\$PORT/Operation/ }}{29}{figure.3.19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Step 3: make datacore-service-show }}{30}{figure.3.20}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Step 3: make processor-service-show }}{30}{figure.3.21}
 \addvspace {10\p@ }

@@ -188,21 +188,16 @@ pdfproducer = {pdflatex}
 
 \chapter{Introducción}
 
-El presente documento representa la memoria formal para el trabajo de investigación de la asignatura Arquitecturas Orientadas a Servicios. Dicho trabajo consta de 2 partes diferencidas. 
-
-En la primera parte, se daran ejemplos de arquitecturas orientadas a servicios en un contexto laboral y empresarial, haciendo distintcion entre soluciones exitosas y soluciones no tan funcionales. En la segunda parte se abordará de una manera más práctica el analisis, diseño e implementación de una arquitectura orientada a servicios con el objetivo de solucionar el problema planteado con este tipo de arquitecturas así como las tecnologías relacionadas con ellas. 
-
-\chapter{Introducción 2}
-
-En la actualidad, las tecnolgías web así como las soluciones basadas en servicios cloud han tomado un gran peso tanto en nuestra vida cotidíana como para el mundo empresarial. El paradigma de servicios cloud denominado "La WEB 2.0" ha revolucionado la manera en la que la información llega al usuario.  El valor aportado al mundo empresarial por el tratamiendo de datos para la toma de decisiones junto con la trasnformación digital ha hecho que innumerables empresas se suban al  carro de las nuevas tecnologías ya que una pequeña inversión en innovación marca una notable mejora en los procesos empresariales.
-
-...etc...CONMPLETAR
+El presente documento representa la memoria formal para el trabajo de investigación de la asignatura Arquitecturas Orientadas a Servicios. Dicho trabajo consta de 2 bloques principales.
 
 
-\chapter{Soluciones Empresariales SOA}
+En la primero de ellos, se daran ejemplos de arquitecturas orientadas a servicios en un contexto laboral y empresarial, haciendo distintcion entre soluciones exitosas y soluciones no tan funcionales. En el segundo, se abordará de una manera más práctica el análisis, diseño e implementación de una arquitectura orientada a servicios con el objetivo de solucionar un problema planteado con este tipo de arquitecturas así como las tecnologías relacionadas con ellas. 
 
-Cada vez son más las soluciones basadas en arquitecturas orientadas a servicios que el usuario tiene a su disposición y cada vez son más diversas las necesidades tecnológicas que el usuario requiere. Por ello, en los ultimos años, han surgido ciertos proveedores de servicios con soluciones basadas en SOA que se han convertido en el buque insignia de las tecnología cloud. Los proveedores de soluciones para "La WEB 2.0" que se tratarán a continuación son:  
+\chapter{Soluciones SOA}
 
+En la actualidad, las tecnolgías web así como las soluciones basadas en servicios cloud han tomado un gran peso tanto en nuestra vida cotidíana como para el mundo empresarial. El paradigma de servicios cloud denominado "La WEB 2.0" ha revolucionado la manera en la que la información llega al usuario.  El valor aportado al mundo empresarial por el tratamiendo de datos para la toma de decisiones junto con la trasnformación digital ha hecho que innumerables empresas se suban al carro de las nuevas tecnologías ya que una pequeña inversión en innovación marca una notable mejora en sus procesos de negocio.
+
+Cada vez son más las soluciones basadas en arquitecturas orientadas a servicios que el usuario tiene a su disposición y cada vez son más diversas las necesidades tecnológicas y servicios de la información que tanto ususarios como empresas requiere. Por ello, en los ultimos años, han surgido ciertos proveedores de servicios con soluciones basadas en SOA que se han convertido en el buque insignia de las tecnologías cloud. Los proveedores de soluciones SOA para "La WEB 2.0" que se tratarán a continuación son:  
 
 \begin{enumerate}
 \item \textbf{Google Cloud Platform}
@@ -212,13 +207,11 @@ Cada vez son más las soluciones basadas en arquitecturas orientadas a servicios
 \item \textbf{Yahoo!}
 \end{enumerate}
 
-De manera adicional se comentará brevemente Ether Cloud Services, la plataforma de cloud hibrida con base de gobierno presentada por el banco BBVA para este 2018 en el congreso Ether.io de noviembre, plataforma en la que actualmente desempeño el rol de desarrollador de soluciones. 
-
-
+De manera adicional se comentará brevemente Ether Cloud Services, la plataforma cloud hibrida con base de gobierno presentada por el banco BBVA para este 2018 en el evento Ether.io de noviembre, plataforma en la que actualmente desempeño el rol de desarrollador de soluciones. 
 
 \subsection{Google Cloud}
 
-Google Cloud Platform, es una plataforma en la nube que ha unificado las aplicaciones para el desarrollo de aplicaciones cloud ofrecidas por Google. Permite crear soluciones  eficientes y escalables. Ejemplos de aplicaciones basadas en SOA pueden ser las propias ofertadas por Google ya que estan basadas en su infraestructura cloud: 
+Google Cloud\cite{google}, es una plataforma en la nube que ha unificado las aplicaciones para el desarrollo de aplicaciones cloud ofrecidas por Google. Permite crear soluciones  eficientes y escalables. Ejemplos de aplicaciones basadas en SOA pueden ser las propias ofertadas por Google ya que estan basadas en su infraestructura cloud: 
 
 \begin{enumerate}
 \item \textbf{Gmail}
@@ -234,7 +227,7 @@ Se considera una SOA exitosa debido al número de usuarios activos que dicha pla
 
 \subsection{Amazon Web Services}
 
-AWS es una colección de servicios cloud ofrecidos por Amazon bajo el abanico de su nube pública.  (también llamados servicios web) que en conjunto forman una plataforma de computación en la nube, ofrecida a través de Internet. Algunos ejemplos exitosos de aplicaciones basadas en SOA que a su vez hacen uso de una arquitectura orientada a servicios como ofrece la plataforma de Amazon son:
+AWS\cite{aws} es una colección de servicios cloud ofrecidos por Amazon bajo el abanico de su nube pública.  (también llamados servicios web) que en conjunto forman una plataforma de computación en la nube, ofrecida a través de Internet. Algunos ejemplos exitosos de aplicaciones basadas en SOA que a su vez hacen uso de una arquitectura orientada a servicios como ofrece la plataforma de Amazon son:
 
 \begin{enumerate}
 \item \textbf{Dropbox}
@@ -246,26 +239,30 @@ La principal ventaja y a la vez problema de la nube de Amazon es su categorizaci
 
 Se considera un ejemplo de arquitectura basada en servicios muy exitosa debido al gran número de usuario que tiene en todo el mundo. De manera adicional, AWS facilita el aprendizaje de su tecnología a estudiantes proporcionando horas de cómputo y unidades de almacenamiento a los propietarios de cuentas de correo universitario. 
 
-TABLA ZONAS DISPONIBILIDAD
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/zonas.png}
+\caption{ Regiones de Diponibilidad }  
+\end{figure} 
 
 \subsection{Microsoft Azure}
 
-Microsoft Azure es conjunto de servicios cloud de caracter empresarial para solucines comerciales. Azure cuenta con un amplio abanico de servicios, herramientas y frameworks para la creación y administracion de soluciones web a nivel mundial. Se le considera un triunfador en el mundo se los servicios cloud, con su gigantesca arquitectura basada en servicios se presenta como un pionero en el mundo de las soluciones cloud. A pesar de que Azure facilita el aprendizaje de su tecnología a los estudiantes concediendo paquetes de computo se la considera una de las plataformas cloud mas caras en terminos de computo y almacenamiento. 
+Microsoft Azure\cite{azure} es conjunto de servicios cloud de caracter empresarial para solucines comerciales. Azure cuenta con un amplio abanico de servicios, herramientas y frameworks para la creación y administracion de soluciones web a nivel mundial. Se le considera un triunfador en el mundo se los servicios cloud, con su gigantesca arquitectura basada en servicios se presenta como un pionero en el mundo de las soluciones cloud. A pesar de que Azure facilita el aprendizaje de su tecnología a los estudiantes concediendo paquetes de computo se la considera una de las plataformas cloud mas caras en terminos de computo y almacenamiento. 
 
 \subsection{mLab}
 
-mLab se caracteriza por ser un servicio de base de datos cloud que ofrece capacidad de almacenamiento en forma de base de datos relacional, MongoDB. mLab proporviona a sus usuarios un servicio de base de datos no relacional totalmente administrado que se ejecuta sobre proveedores de servicio como los vistos anteriormente (Google, Amazon o Microsoft Azure)
+mLab\cite{mlab} se caracteriza por ser un servicio de base de datos cloud que ofrece capacidad de almacenamiento en forma de base de datos relacional, MongoDB. mLab proporviona a sus usuarios un servicio de base de datos no relacional totalmente administrado que se ejecuta sobre proveedores de servicio como los vistos anteriormente (Google, Amazon o Microsoft Azure)
 
 Se considera un ejemplo de SOA exitoso debido a que el servicio ofertado es consumido por miles de desarrolladores cloud en todo el mundo para implementar soluciones SOA ademas de facilitar el aprendizaje de su tecnología de negocio ya que ofrece pequeñas parcelas de almacenamiento cloud de manera gratuita. 
 
 \subsection{Yahoo!}
 
-Yahoo es un portal de internet que ofrece distintos servicios de información como correo electrónico, directorio de servicios web y principalmente motor de busqueda. La arquitectura de este portal esta basada en el paradigma de las arquitecturas basadas en microservicios pero es considera como un fracaso empresarial ya que en En 2009, Yahoo anunció que en el primer trimestre sus utilidades cayeron 78\% con respecto a igual periodo de 2008. La compañía despidió a más de 5\% de su personal, equivalente 700 empleados, que se sumaban a 
+Yahoo\cite{yahoo} es un portal de internet que ofrece distintos servicios de información como correo electrónico, directorio de servicios web y principalmente motor de busqueda. La arquitectura de este portal esta basada en el paradigma de las arquitecturas basadas en microservicios pero es considera como un fracaso empresarial ya que en En 2009, Yahoo anunció que en el primer trimestre sus utilidades cayeron 78\% con respecto a igual periodo de 2008. La compañía despidió a más de 5\% de su personal, equivalente 700 empleados, que se sumaban a 
 los 1500 anunciados el mismo año. La compañía no podía hacer frente a Google, su principal rival por lo que en 2012 despidío a 2000 empleados, el 14\% de su equipo global. 
 
 \subsection{Ether Cloud Services}
 
-ECS se presenta como el futuro competidor de AWS y Google Cloud para desarrolladores de servicios y soluciones financieras sobre escenarios cloud. La plataforma ECS presenta un conjunto de diversas disciplinas de servicios cloud con base de gobierno para el desarrollo y despliegue de aplicaciones basadas en servicios. La plataforma en si es una arquitectura SOA pura en la que un conjunto de piezas o servicios, implementando unas interfaces o End-points comunes son capaces de formar una red cloud a nivel global para ofrecer todo tipo de servicios para desarrolladores de aplicaciones financieras, analisis continuo de flujos de datos, categorización, aprovisionamiento, testing, cómputo y almacenamiento en todo el mundo, permitiendo asi que los procesos de negocio del banco cambien de modo BATCH a REAL TIME.  
+ECS\cite{ecs} se presenta como el futuro competidor de AWS y Google Cloud para desarrolladores de servicios y soluciones financieras sobre escenarios cloud. La plataforma ECS presenta un conjunto de diversas disciplinas de servicios cloud con base de gobierno para el desarrollo y despliegue de aplicaciones basadas en servicios. La plataforma en si es una arquitectura SOA pura en la que un conjunto de piezas o servicios, implementando unas interfaces o End-points comunes son capaces de formar una red cloud a nivel global para ofrecer todo tipo de servicios para desarrolladores de aplicaciones financieras, análisis continuo de flujos de datos, categorización, aprovisionamiento, testing, cómputo y almacenamiento en todo el mundo, permitiendo asi que los procesos de negocio del banco cambien de modo BATCH a REAL-TIME.  
 
 \chapter{Aplicación Técnica SOA}
 
@@ -277,7 +274,7 @@ Como desarrolladores de soluciones, cliente ha solicitado un sistema para el tra
 
 \section{Análisis del Problema}
 
-Para abordar el problema planteado por cliente, se ha decidido utilizar una arquitectura basada en microservicios. Para ello, se pretende definir un bloque principal para la gestión de los conjuntos de datos o datasets. Cliente será capaz de interaccionar con el bloque de gestión mediante una API-RESTFUL basada en protocolo http, lo que le permitirá consumir el servicio de datos y usar el sistema como back-end para implementar aplicaciones que consuman dicho servicio de tratamiento de datos de una manera sencilla y homogenea. De manera adicional y usando dicha interfaz REST, el cliente será capaz de realizar operaciones sobre los conjuntos de datos que  el sistema es capaz de gestionar. Con el objetivo de optimizar el rendimiento y la eficiencia se ha decidido delegar el procesamiento de datos a otro servicio totalmente independiente al bloque principal de gestión, por lo que tanto el bloque de gestión como los servicios esclavos encargados del tratamiento de datos, deberan implementar una API-REST privada. De esta forma, la experiencia que percibe el usuario será trasnparente al procesamiento que el sistema realice en su interior, ya que cliente solo conocerá la API publica del bloque de gestión. 
+Para abordar el problema planteado por cliente, se ha decidido utilizar una arquitectura basada en microservicios. Para ello, se pretende definir un bloque principal para la gestión de los conjuntos de datos o datasets. Cliente será capaz de interaccionar con el bloque de gestión mediante una API-RESTFUL\cite{api} basada en protocolo HTTP\cite{http}, lo que le permitirá consumir el servicio de datos y usar el sistema como back-end para implementar aplicaciones que consuman dicho servicio de tratamiento de datos de una manera sencilla y homogenea. De manera adicional y usando dicha interfaz REST, el cliente será capaz de realizar operaciones sobre los conjuntos de datos que  el sistema es capaz de gestionar. Con el objetivo de optimizar el rendimiento y la eficiencia se ha decidido delegar el procesamiento de datos a otro servicio totalmente independiente al bloque principal de gestión, por lo que tanto el bloque de gestión como los servicios esclavos encargados del tratamiento de datos, deberan implementar una API-REST privada. De esta forma, la experiencia que percibe el usuario será trasnparente al procesamiento que el sistema realice en su interior, ya que cliente solo conocerá la API publica del bloque de gestión. 
 
 Este paradigma permitirá al sistema escalar fácilmente e incluir nuevas operaciones o tratamientos para los datos que el bloque de gestión disponibiliza mediante la API pública a cliente. El siguiente diagrama muestra la arquitectura basada en servicios rest que se quiere desarrollar para solucionar el problema propuesto. 
 
@@ -301,7 +298,7 @@ Para el usuario y su experiencia con el sistema, esto es transparente pues el re
 
 \subsection{Procesadores}
 
-Encargados del procesamiento y tratamiendo de datos, son los encargados del procesamiento y tratamiento de datos, ofrecen servicio al core del sistema mediante Api-rest privada. Su objetivo es la computación por lo que carecen de capa de persistencia, reciben conjuntos de datos y devuelven el resultado de aplicar cierta operación sobre ese conjunto de datos. 
+Encargados del procesamiento y tratamiendo de datos, son los encargados del procesamiento y tratamiento de datos, ofrecen servicio al core del sistema mediante Api-Rest privada. Su objetivo es la computación por lo que carecen de capa de persistencia, reciben conjuntos de datos y devuelven el resultado de aplicar cierta operación sobre ese conjunto de datos. 
 
 \subsection{Datacore}
 
@@ -313,7 +310,7 @@ Capa de persistencia encargada del almacenamiento de datos.
 
 \section{Especificación de la Solución}
 
-Tras analizar el problema a resolver, en esta seción se realizará la espeficación necesaria para su solución. Para ello, se van a definir los siguientes subsecciones: 
+Tras analizar el problema a resolver, en esta sección se realizará la espeficación necesaria para su solución. Para ello, se van a definir los siguientes sub-secciones: 
 
 \subsection{Requisitos de Información del Sistema}
 
@@ -323,7 +320,9 @@ Los requisitos de información se caracterizan por reunir la información releva
 Contenido: ID unico del conjunto de datos, título representativo del dataset, fecha de creación y el conjunto de datos en si. \\
 
 
-\textbf{RI-2. Operación:} Representación de cada una de las operaciones comptacionales que el sistema pone a disposición del ususario. Contenido: ID único de la operacion, operador o palabra reservada para realizar la operación, número de datasets que estan involucrados en la operación. \\
+\textbf{RI-2. Operación:} Representación de cada una de las operaciones computacionales que el sistema pone a disposición del ususario. Contenido: ID único de la operacion, operador o palabra reservada para realizar la operación, datasets que estan involucrados en la operación. \\
+
+\textbf{RI-3. Servicio:} Representación de cada uno de los servicios operacionales registrados en el sistema, capaces de realizar operaciones sobre conjuntos de datos. Contenido: ID único del servicio, Título del servicio, url mediante la cual se ofrece el servicio. \\
 
 \subsection{Requisitos Funcionales del Sistema}
 
@@ -372,21 +371,21 @@ Como se vió en el apartado "Análisis del Problema" hay 3 bloques principales q
 
 \subsection{Procesadores}
 
-Para la implementación de un procesador basíco al que el sistema pueda solicitar operaciones sobre los datasets, se ha decidido utilizar python, mediante el micro-framework Flask para el desarrollo de aplicaciónes web. Se ha decidido utilizar python como tecnoloǵia base debido a la gran variadad de librerias y algoritmos para el tratamiento de datos que existen para este lenguaje, muchas de ellas son adaptaciones de librerias pertenecientes al popular lenguaje para mineria de datos denominado R. 
+Para la implementación de un procesador basíco al que el sistema pueda solicitar operaciones sobre los datasets, se ha decidido utilizar Python\cite{py}, mediante el micro-framework Flask\cite{flask} para el desarrollo de aplicaciónes web. Se ha decidido utilizar python como tecnoloǵia base debido a la gran variadad de librerias y algoritmos para el tratamiento de datos que existen para este lenguaje, muchas de ellas son adaptaciones de librerias pertenecientes al popular lenguaje para mineria de datos denominado R. 
 
 La ventaja de la aquitectura basada en servicios que se va a implementar reside en que la tecnología utilizada es independiente al problema, es decir, el sistema puede delegar las operaciones computacionales a distintos servicios de procesado y estos pueden estar implementados con diversas tecnológias como python, javascript, scala...lo unico que han de hacer es implementar los End-points o interfaces rest que se definan en el API privada para que el sistema pueda delegar tareas computacionales a dichos servicios.
 
 \subsection{Datacore}
 
-Como se especificó anteriormente, Datacore es la pieza encargada de orquestar las peticiones de los usuarios con los servicios de cómputo y almacenamiento por eso se ha decidido impementar utilizando el lenguaje de programación GO. Esta tecnología esta orientada al desarrollo de servicios rest de altas prestaciones, optimizando el trafico y las peticiones concurrentes. Al tratarse de un lenguaje compilado, los ejecutables generados son multiplataforma lo que facilita su despliegue sobre diversas infraestructuras. 
+Como se especificó anteriormente, Datacore es la pieza encargada de orquestar las peticiones de los usuarios con los servicios de cómputo y almacenamiento por eso se ha decidido impementar utilizando el lenguaje de programación GO\cite{go}. Esta tecnología esta orientada al desarrollo de servicios rest de altas prestaciones, optimizando el trafico y las peticiones concurrentes. Al tratarse de un lenguaje compilado, los ejecutables generados son multiplataforma lo que facilita su despliegue sobre diversas infraestructuras. 
 
 \subsection{Store}
 
-Como capa de persistencia se ha decidido utilizar un modelo NO relaccional, lo que permite almacenar datasets como documentos, esto significa que el enrriquecimiento de las estructuras de datos almacenadas puede realizarse de manera simple. Para ello, se ha decidido utilizar el motor NoSql proporcionado por MongoDB. Este software permite optimizar las busquedas de datasets mediante la indexación de sus colecciones de documentos lo que supone una ganacia en eficiencia con respecto a bases de datos relaccionales orientadas a transaciones de objetos como Postgresql o Mysql.   
+Como capa de persistencia se ha decidido utilizar un modelo NO relaccional, lo que permite almacenar datasets como documentos, esto significa que el enrriquecimiento de las estructuras de datos almacenadas puede realizarse de manera simple. Para ello, se ha decidido utilizar el motor NoSql proporcionado por MongoDB\cite{mongo}. Este software permite optimizar las busquedas de datasets mediante la indexación de sus colecciones de documentos lo que supone una ganacia en eficiencia con respecto a bases de datos relaccionales orientadas a transaciones de objetos como Postgresql o Mysql.   
 
 \subsection{Virtualización}
 
-Con el objetivo de facilitar el uso y la distribución de Datarestful como proyecto software se ha decidido utilizar el motor de virtualización ligera docker para ejecutar las piezas (datacore, procesador y store) a nivel subsistema sin necesidad de obligar al desarrollador a instalarse las dependencias necesarias o a tener un servicio de sistema de gestión de bases de datos no relaccionales corriendo en su equipo, pues docker es auto-contenido, dando la posibilidad de generar imagenes funcionales de las piezas mediante el dichero Dockerfile contenido en el directorio raíz de los mismos. A nivel de sistema, se ha decidido utilizar el motor de orquestación para contenedores denominado docker-compose el cual permite al desarrollador orquestar las imagenes de cada una de las piezas para unificar su comportacmiento y presentarse como un único sistema. Docker-compose hace uso del fichero docker-compose.yml en la raíz del proyecto. Este fichero permite definir de una manera clara y sencilla la arquitectura SOA presentada como solución. De manera adicional, no es necesario tener un fichero Dockerfile para mongoDB pues especificando la tag:version de las imganes públicas disponibles en DOCKER-HUB, las imagenes especificadas, que no se encutren generadas localmente en nuestro equipo serán descargadas, listas par funcionar. Para interactuar con el sistema Datarestful se ha preparado un CLI y un Makefile cuyo uso se ejemplificará con un caso de uso. 
+Con el objetivo de facilitar el uso y la distribución de Datarestful como proyecto software se ha decidido utilizar el motor de virtualización ligera docker\cite{docker} para ejecutar las piezas (datacore, procesador y store) a nivel subsistema sin necesidad de obligar al desarrollador a instalarse las dependencias necesarias o a tener un servicio de sistema de gestión de bases de datos no relaccionales corriendo en su equipo, pues docker es auto-contenido, dando la posibilidad de generar imagenes funcionales de las piezas mediante el dichero Dockerfile contenido en el directorio raíz de los mismos. A nivel de sistema, se ha decidido utilizar el motor de orquestación para contenedores denominado docker-compose el cual permite al desarrollador orquestar las imagenes de cada una de las piezas para unificar su comportacmiento y presentarse como un único sistema. Docker-compose hace uso del fichero docker-compose.yml en la raíz del proyecto. Este fichero permite definir de una manera clara y sencilla la arquitectura SOA presentada como solución. De manera adicional, no es necesario tener un fichero Dockerfile para mongoDB pues especificando la tag:version de las imganes públicas disponibles en DOCKER-HUB, las imagenes especificadas, que no se encutren generadas localmente en nuestro equipo serán descargadas, listas par funcionar. Para interactuar con el sistema Datarestful se ha preparado un CLI y un Makefile cuyo uso se ejemplificará con un caso de uso. 
 
 \section{ Construcción }
 
@@ -450,7 +449,7 @@ Por ejemplo para generar la imagen docker necsaria para el servicio datacore pod
 \caption{ make docker-datacore }  
 \end{figure} 
 
-Puesto que el servicio datacore ha sido implementado con GO, lenguaje compilado capaz de generar ejecutables multiplataforma, la construcción de la imagen es rápida, pues no es necesario instalar nada en ella. En el caso de la imagen docker que representa al servicio de procesamiento python, es necesario instalar las dependencias  necesarias, las cuales son establecidas en el Dockerfile que se muestra a continuación. La imagen que representa este fichero puede ser generada mediante make docker-basicpythonprocessor:
+Puesto que el servicio datacore ha sido implementado con GO, lenguaje compilado capaz de generar ejecutables multiplataforma, la construcción de la imagen es rápida, pues no es necesario instalar nada en ella. En el caso de la imagen docker que representa al servicio de procesamiento python, es necesario instalar las dependencias  necesarias, las cuales son establecidas en el Dockerfile que se muestra a continuación. La imagen que representa este fichero puede ser generada mediante \textbf{make docker-basicpythonprocessor}:
 
 \begin{lstlisting}[language=python,caption={basicPythonProcessor/Dockerfile}]
 FROM ubuntu:latest
@@ -459,15 +458,21 @@ RUN apt-get install -y python
 RUN apt-get install -y python-pip
 RUN pip install --upgrade pip
 
+
+
+ENV SERVICE_URL http://pythonprocessor:5000/basicOperator
+ENV DATARESTFUL_URL http://datacore:8080
 ENV APP app.py
-ADD ./ /usr/local/bin/
+ADD . /usr/local/bin/
 
 RUN pip install Flask==0.10.1
 RUN pip install requests==2.19.1
 RUN pip install urllib3==1.23
 
+
 EXPOSE 5000
 ENTRYPOINT python /usr/local/bin/$APP
+
 \end{lstlisting}
 
 Una vez generadas las imagenes necesarias para los servicios que componen Datarestful podemos levantar la arquitectura completa, para ello se ha definido el siguiente docker-compose.yml
@@ -499,12 +504,15 @@ services:
 \end{lstlisting}
 
 
-Como se puede observar, para la capa de persistencia se usa una imagen mongoDB oficial, por lo que no es necesaria generarla mediante un Dockerfile, tan solo es necesaria tenerla presente en nuestro sistema o descargarla en caso contrario. Een este fichero se especifica el comportamiento del sistema, es decir, el orden en el que nuestros servicios han de estar disponibles y el orden en el que nuestros servicios han de detenerse.  El servicio que representa la capa de persistencia (mongoDB) será el primero en arrancar, pues el servicio datacore depende de él, siendo este el siguiente en arrancar. El último servicio en arrancar será el procesador python pues depende de datacore para funcionar. Este es el comportamiento nominal, pues datacore necesita mongoDB ya que es el encargado de de interactuar con la base de datos y el resto de procesadores (en este caso solo uno) necesitan a datacore pues la primera acción que realizan estos servicios es el de registrarse como servicio disponible de procesamiento. Cuando uno de estos servicios sufre un fallo y se detiene, se eliminará de la colección de servicios disponibles para el ususario, pues no será capaz de atender peticiones de ninguna clase. Datarestful puede ser levantado mediante make datarestful-up 
+Como se puede observar, para la capa de persistencia se usa una imagen mongoDB oficial, por lo que no es necesaria generarla mediante un Dockerfile, tan solo es necesaria tenerla presente en nuestro sistema o descargarla en caso contrario. Een este fichero se especifica el comportamiento del sistema, es decir, el orden en el que nuestros servicios han de estar disponibles y el orden en el que nuestros servicios han de detenerse.  El servicio que representa la capa de persistencia (mongoDB) será el primero en arrancar, pues el servicio datacore depende de él, siendo este el siguiente en arrancar. El último servicio en arrancar será el procesador python pues depende de datacore para funcionar. Este es el comportamiento nominal, pues datacore necesita mongoDB ya que es el encargado de de interactuar con la base de datos y el resto de procesadores (en este caso solo uno) necesitan a datacore pues la primera acción que realizan estos servicios es el de registrarse como servicio disponible de procesamiento. Cuando uno de estos servicios sufre un fallo y se detiene, se eliminará de la colección de servicios disponibles para el ususario, pues no será capaz de atender peticiones de ninguna clase. Datarestful puede ser levantado mediante \textbf{make datarestful-up}. 
 
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/make_datarestful_up.png}
+\caption{ make datarestful-up }  
+\end{figure} 
 
-
-
-Se puede apreciar que todos los logs de los servicios que acabamos de levantar se muestran por la misma salida estandar, lo que puede dificultar las tareas debug, para ello, podemos consultar los logs de cada servicio de manera independiente, por ejemplo con make datacore-service-show es posible chequear los logs del servicio datacore:
+Se puede apreciar que todos los logs de los servicios que acabamos de levantar se muestran por la misma salida estandar, lo que puede dificultar las tareas debug, para ello, podemos consultar los logs de cada servicio de manera independiente, por ejemplo con make datacore-service-show es posible chequear los logs del servicio datacore o los del servicio de procesamiento:
 
 
 \begin{figure}[H]  
@@ -514,58 +522,358 @@ Se puede apreciar que todos los logs de los servicios que acabamos de levantar s
 \end{figure} 
 
 
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/processor-service-show.png}
+\caption{ make processor-service-show }  
+\end{figure} 
 
+Se puede observar que los servicios no han atendido ninguna request, pues solo los hemos arrancado, y la unica petición atendida ha sido por el datacore, realizada por el servicio de procesamiento para darse de alta como servicio disponible. 
 
+Finalmente, cuando se quiera detener Datarestful podemos emplear las reglas down, por ejemplo, podemos detener el sistema completo mediante \textbf{make datarestful-down}  donde se aprecia como los servicios son detenidos en el orden adecuado, primero el procesador basico, seguido del servicio datacore y finalmente la instancia de mongo: 
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/datarestful-down.png}
+\caption{ make datarestful-down}  
+\end{figure} 
 
  
+ 
+ \section{Caso de Uso}
+ 
+ Con el objetivo de mostrar las funcionalidades implementadas, se va a ejecutar un caso de uso. Al tratarse de una arquitectura basada en servicios REST que carece de frontal, se pueden utilizar herramientas como postman para realizar las distintas peticiones que un usuario de Datarestful realizaría de manera nominal. Teniendo en cuenta herramientas como esta, finalmente se ha decidido implementar el siguiente CLI para interactuar con el sistema mediante el uso del comando curl con funciones de interprete bash: 
 
+\begin{lstlisting}[language=python,caption={resources/cli/datacli.sh}]
+
+#!/usr/bin/env bash
+HOST=localhost
+PORT=8080
+
+function Datarestful_index() {
+  curl -X GET  \
+    "http://$HOST:$PORT/" \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/json'
+}
+
+function Datarestful_addDataset() {
+  TITLE=$1
+  DATA=$2
+  curl -X POST  \
+    "http://$HOST:$PORT/AddDataset" \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/json' \
+    -d '{
+      "title": "'$TITLE'",
+      "data": ["1", "2", "3"]
+    }'
+}
+
+function Datarestful_getDataset() {
+  ID=$1
+  curl -X GET  \
+    "http://$HOST:$PORT/datasets/$ID" \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/json'
+}
+
+function Datarestful_getDatasetByTitle() {
+  T=$1
+  curl -X GET  \
+    "http://$HOST:$PORT/Search/$T" \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/json'
+}
+
+function Datarestful_deleteDataset() {
+  ID=$1
+  curl -X DELETE  \
+    "http://$HOST:$PORT/deleteDataset/$ID" \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/json'
+}
+
+function Datarestful_updateDataset() {
+  ID=$1
+  TITLE=$2
+  #DATA=[1, 2, 3]
+  curl -X PUT  \
+    "http://$HOST:$PORT/UpdateDataset" \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/json' \
+    -d '{
+       "_id": "'$ID'",
+      "title": "'$TITLE'",
+      "data": ["1111", "2222", "3333"]
+    }'
+}
+
+function Datarestful_listservices() {
+  curl -X GET  \
+    "http://$HOST:$PORT/Services/" \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/json'
+}
+
+function Datarestful_operation() {
+  ID=$1
+  VALUE=$2
+  OPE=$3
+  URL=$4
+  curl -X POST  \
+    "http://$HOST:$PORT/Operation/" \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/json' \
+    -d '{
+	    "dataset_id": "'$ID'",
+	    "value": "'$VALUE'",
+	    "operator": "'$OPE'",
+	    "service_url":  "'$URL'"
+    }'
+}
+\end{lstlisting}
+
+Para hablitirar este CLI es necesario abrir una nueva terminal y ejecutar \textbf{source resources/cli/datacli.sh} en la raíz del proyecto, a continuación, si escribimos Data\_ e intentamos tabular para que nos auto-complete la terminal, podemos confirmar que efectivamente las operaciones estan disponibles solo para ser ejecutadas desde esta terminal.  
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/cli.png}
+\caption{ cli }  
+\end{figure} 
+
+
+Por simplicidad, algunos de los datos que son enviados en el body de las peticiones son estáticos. Para mostrar la usabilidad del sistema y representar un caso de uso, se van a enumerar una serie de pasos o steps con las distintas peticiones que se van a realizar.  
+
+\subsection{Step-1: Servicios Disponibles}
+
+Para comenzar, solo hemos levantado el servicio datacore mediante \textbf{make datacore-service-up}, para que el usuario pueda gestionar los datasets y consultar los servicios de procesamiento disponibles.
+
+El usuario de Datarestful desea conocer los servicios de procesamiento que tiene disponibles, para ello, desde la terminal con el cli cargado, ejecuta \textbf{Datarestful\_listservices} y obtiene una lista vacia, pues aun no hemos levantado el servicio de procesmiento.  
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/list_services.png}
+\caption{ Step1- http://\$HOST:\$PORT/Services/ }  
+\end{figure} 
+
+
+Si levantamos el servicio de procesamiento mediante \textbf{make processor-service-up} y el usuario vuelve a ejecutar \textbf{Datarestful\_listservices} desde el cli, esta vez si optiene el servicio que acabamos de levantar, con la información necesaria para futuras operaciones: 
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/list_services2.png}
+\caption{ Step 1: http://\$HOST:\$PORT/Services/  }  
+\end{figure} 
+
+De manera adicional, podemos chequear los logs del servicio datacore para validar que efectivamente se ha registrado un nuevo servicio de procesamiento. \textbf{NOTA:} Estos logs corresponden a los servicios, un usuario nominal no dispondría de estas trazas. 
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/add_service.png}
+\caption{ make datacore-service-show }  
+\end{figure} 
+
+\subsection{Step-2: Gestión de Datasets}
+
+Una vez que el usuario de Dataresful dispone de servicios de procesamiento, lo siguiente que ha de hacer es nutrir al sistema de datos sobre los que realizar procesamiento. Para ello, desde el cli puede obtener todas los datasets de los que dispone ejecutando \textbf{Datarestful\_index}
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/index.png}
+\caption{ Step 2: http://\$HOST:\$PORT/   }  
+\end{figure} 
+
+Puesto que aun no se ha dado de alta ningun dataset, la consulta devuelve una lista vacia. Para dar de alta un dataset generico, desde el cli, el usuario puede ejecutar \textbf{Datarestful\_addDataset step2} enviado una petición POST sobre el end-point \textbf{http://\$HOST:\$PORT/AddDataset} y de nuevo \textbf{Datarestful\_index} devolviendo ahora el dataset estático que se ha definido en el cli: 
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/add_dataset.png}
+\caption{ Step 2: http://\$HOST:\$PORT/   }  
+\end{figure} 
+
+El usuario ha realizado varias llamadas a \textbf{Datarestful\_addDataset } con distintos títulos por lo que si consulta todas las datasets mediante \textbf{Datarestful\_index} obtendrá:
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/many.png}
+\caption{ Step 2: http://\$HOST:\$PORT/   }  
+\end{figure} 
+
+El usuario puede filtrar los datasets disponibles mediante ID usando \textbf{Datarestful\_getDataset ID}
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/id.png}
+\caption{ Step 2: http://\$HOST:\$PORT/datasets/\$ID   }  
+\end{figure} 
+
+El usuario puede filtrar los datasets disponibles mediante su título usando \textbf{Datarestful\_getDatasetByTitle title}
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/string.png}
+\caption{ Step 2: http://\$HOST:\$PORT/Search/\$T   }  
+\end{figure}
+
+El usuario puede actualizar los datasets disponibles mediante Datarestful\_updateDataset \$ID \$TITLE donde \$ID  corresponde a la \_id del dataset que será actualizado, y \$TITLE al nuevo titulo. En esta operación y por simplificar, los datos con los que se actualizará la dataset en cuestión son estaticos, pero bastaría con componer una PUT request con la siguiente estructura en su body:  
+
+\begin{lstlisting}[language=python,caption={body}]
+{
+	"_id": "dataset_id_to_update",
+    "title": "new_title",
+    "data": ["9999", "888", "77","6"]
+}
+
+\end{lstlisting}
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/update.png}
+\caption{ Step 2: http://\$HOST:\$PORT/UpdateDataset }  
+\end{figure}
+
+
+El ususario puede eliminar aquellos datasets que considere oportunos mediante la operación \textbf{Datarestful\_deleteDataset \$ID} donde \$ID corresponde al identificador del dataset en cuestión. 
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/delete.png}
+\caption{ Step 2: http://\$HOST:\$PORT/deleteDataset/\$ID }  
+\end{figure}
+
+\subsection{Step-3: Operaciones}
+
+El siguiente paso es solicitar alguna operación aritmética sobre un dataset, para ello, se puede hacer uso de la función Datarestful\_operation \$ID \$VALUE \$OPE \$URL donde:
+
+\begin{enumerate}
+\item \textbf{ID} identificador del dataset a operar 
+\item \textbf{VALUE} valor utilizado en la operacion aritmética
+\item \textbf{OPE} Operardor representativo de la operación
+\item \textbf{URL} dirección del servicio al que delegaremos la operación
+\end{enumerate}
+
+Para realizar una operación, el usuario ha de tener algún conjunto de datos declarado en el sistema, debe de haber algun servicio de procesamiento disponible y solicitar una operación, en el siguiente caso, la suma del valor 2 a todo el conjunto de datos:
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/ope.png}
+\caption{ Step 3: http://\$HOST:\$PORT/Operation/ }  
+\end{figure}
+
+El procesador básico soporta multiplicación, resta y división:
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/ope2.png}
+\caption{ Step 3: http://\$HOST:\$PORT/Operation/ }  
+\end{figure}
+
+Chequeando los logs del servicio datacore se pueden observar las operaciones solicitadas: 
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/ope3.png}
+\caption{ Step 3: make datacore-service-show }  
+\end{figure}
+
+Chequeando los logs del servicio pythonprocessor se pueden observar las operaciones atendidas: 
+
+\begin{figure}[H]  
+\centering 
+\includegraphics[scale=0.35]{imagenes/ope4.png}
+\caption{ Step 3: make processor-service-show }  
+\end{figure}
+
+
+\section{Conclusiones}
+
+El prototipo del sistema resultante cumple con las indicaciones que cliente solicito ya que es facilmente escalable pues soporta tantas operaciones como servicios de procesamiento se registren en el servicio de gestión datacore. La arquitectura orientada a servicios que se ha implementado permite que distintos procesadores, implementados con distintas tecnlogías sean capaces de integrarse como servicio al sistema lo que facilita la actualización de sus capacidades. La base de datos MongoDB esta pensada para grandes cantidades de datos y en el futuro, cuando el rendimiento del sistema se mida en proporciones globales podrá escalarse facilmente mediante una configuración de replica-set donde un conjunto de MongoDBs actuan como una sola. 
+
+
+El uso de contenedores para la estructuración y pruebas del sistema facilita a los desarrolladores la distribución del sistema ya que no necesitan instalar las dependencias, solo disponer de docker en su sistema, ademas facilita las pruebas y las tareas debug. 
+ 
+ 
+\chapter{Entrega}
+
+La entrega contiene los siguientes directorios:  
+
+\begin{enumerate}
+\item \textbf{basicPythonProcessor} código fuente del servicio de procesamiento.
+\item \textbf{datacore:} código fuente del servicio principal de gestión de datos.
+\item \textbf{DOC} Ficheros fuente de esta documentación redactada con LaTEX
+\item \textbf{resources} Recursos adicionales como el cli.sh
+\end{enumerate}
+
+De manera adicional, el directorio raíz contiene este documento en formato PDF a modo de memoria formal, licencia GPL3, herramienta de construcción y especificación de arquitectura. 
+
+ 
 \begin{thebibliography}{aaaa}
 
 %intro
 
-\bibitem[1]{xml} \textsc{XML},
-\textit{XML Format}
-\url{https://www.w3.org/XML/} 
+\bibitem[1]{gogle} \textsc{GOOGLE},
+\textit{Google Cloud}
+\url{https://cloud.google.com/?hl=es} 
 
 
-\bibitem[2]{json} \textsc{JSON},
-\textit{JSON Format}
-\url{https://www.json.org/} 
+
+\bibitem[2]{aws} \textsc{AWS},
+\textit{Amazon Web Services}
+\url{https://aws.amazon.com/es/?nc2=h_lg} 
 
 %Desarrollo
 
-\bibitem[3]{py} \textsc{python},
-\textit{Python 2.7.6 language}
-\url{https://www.python.org/download/releases/2.7.6/} 
+\bibitem[3]{azure} \textsc{azure},
+\textit{Microsoft Azure}
+\url{https://azure.microsoft.com/es-es/} 
 
 
-\bibitem[4]{json_lib} \textsc{import json},
-\textit{JSON encoder and decoder}
-\url{https://docs.python.org/2/library/json.html} 
+\bibitem[4]{mlab} \textsc{mLAB},
+\textit{mLab: Database-as-a-Service for MongoDB}
+\url{https://mlab.com/} 
 
-\bibitem[5]{xmltodic_lib} \textsc{import xmltodic},
-\textit{Makes working with XML feel like you are working with JSON}
-\url{https://pypi.python.org/pypi/xmltodict} 
+\bibitem[5]{yahoo} \textsc{Yahoo},
+\textit{Yahoo}
+\url{https://es.yahoo.com/} 
 
-\bibitem[6]{sys_lib} \textsc{import sys},
-\textit{System-specific parameters and functions}
-\url{https://docs.python.org/2/library/sys.html} 
+\bibitem[6]{ecs} \textsc{ECS},
+\textit{Ether Cloud Services}
+\url{http://www.ticbeat.com/innovacion/fintech/inaki-bernal-cto-del-bbva-somos-una-compania-de-software-bastante-mala/} 
 
-\bibitem[7]{os_lib} \textsc{import os},
-\textit{Miscellaneous operating system interfaces}
-\url{https://docs.python.org/2/library/os.html} 
+\bibitem[7]{api} \textsc{Api Rest},
+\textit{Representational State Transfer}
+\url{https://bbvaopen4u.com/es/actualidad/api-rest-que-es-y-cuales-son-sus-ventajas-en-el-desarrollo-de-proyectos} 
 
-\bibitem[8]{getopt_lib} \textsc{import getopt},
-\textit{C-style parser for command line options}
-\url{https://docs.python.org/2/library/getopt.html}
+\bibitem[8]{http} \textsc{HTTP},
+\textit{Hypertext Transfer Protocol -- HTTP}
+\url{https://www.w3.org/Protocols/rfc2616/rfc2616.html}
+
+\bibitem[9]{py} \textsc{Python},
+\textit{Programing Language}
+\url{https://www.python.org/}
+
+
+\bibitem[10]{flask} \textsc{Flask},
+\textit{Python Microframework }
+\url{http://flask.pocoo.org/}
+
+\bibitem[11]{go} \textsc{GO},
+\textit{The Go Programming Language}
+\url{https://golang.org/}
+
+
+\bibitem[12]{mongo} \textsc{MongoDB},
+\textit{noSQL Mongo Data Base}
+\url{https://www.mongodb.com/}
+
+\bibitem[12]{docker} \textsc{Docker},
+\textit{Build, Manage and Secure Your Apps Anywhere. Your Way.}
+\url{https://www.docker.com/}
 
 
 \end{thebibliography}
  
-
-\chapter{Anexo}
-\section{generator.py}
-
 
 
 %

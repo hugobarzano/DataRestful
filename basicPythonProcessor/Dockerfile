@@ -5,6 +5,9 @@ RUN apt-get install -y python-pip
 RUN pip install --upgrade pip
 
 
+
+ENV SERVICE_URL http://pythonprocessor:5000/basicOperator
+ENV DATARESTFUL_URL http://datacore:8080
 ENV APP app.py
 ADD . /usr/local/bin/
 

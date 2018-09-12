@@ -1,28 +1,31 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{7}{chapter.1}
-\contentsline {chapter}{\numberline {2}Introducci\IeC {\'o}n 2}{9}{chapter.2}
-\contentsline {chapter}{\numberline {3}Soluciones Empresariales SOA}{11}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Google Cloud}{11}{subsection.3.0.1}
-\contentsline {subsection}{\numberline {3.0.2}Amazon Web Services}{12}{subsection.3.0.2}
-\contentsline {subsection}{\numberline {3.0.3}Microsoft Azure}{13}{subsection.3.0.3}
-\contentsline {subsection}{\numberline {3.0.4}mLab}{13}{subsection.3.0.4}
-\contentsline {subsection}{\numberline {3.0.5}Yahoo!}{13}{subsection.3.0.5}
-\contentsline {subsection}{\numberline {3.0.6}Ether Cloud Services}{14}{subsection.3.0.6}
-\contentsline {chapter}{\numberline {4}Aplicaci\IeC {\'o}n T\IeC {\'e}cnica SOA}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}El Problema}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}An\IeC {\'a}lisis del Problema}{15}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Procesadores}{17}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Datacore}{17}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Storage}{17}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Especificaci\IeC {\'o}n de la Soluci\IeC {\'o}n}{17}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Requisitos de Informaci\IeC {\'o}n del Sistema}{17}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Requisitos Funcionales del Sistema}{18}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Requisitos No Funcionales del Sistema}{18}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Implementaci\IeC {\'o}n y Tecnol\IeC {\'o}gia}{18}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Procesadores}{19}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Datacore}{19}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Store}{19}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Virtualizaci\IeC {\'o}n}{20}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5} Construcci\IeC {\'o}n }{20}{section.4.5}
-\contentsline {chapter}{\numberline {5}Anexo}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}generator.py}{27}{section.5.1}
+\contentsline {chapter}{\numberline {2}Soluciones SOA}{9}{chapter.2}
+\contentsline {subsection}{\numberline {2.0.1}Google Cloud}{10}{subsection.2.0.1}
+\contentsline {subsection}{\numberline {2.0.2}Amazon Web Services}{10}{subsection.2.0.2}
+\contentsline {subsection}{\numberline {2.0.3}Microsoft Azure}{11}{subsection.2.0.3}
+\contentsline {subsection}{\numberline {2.0.4}mLab}{12}{subsection.2.0.4}
+\contentsline {subsection}{\numberline {2.0.5}Yahoo!}{12}{subsection.2.0.5}
+\contentsline {subsection}{\numberline {2.0.6}Ether Cloud Services}{12}{subsection.2.0.6}
+\contentsline {chapter}{\numberline {3}Aplicaci\IeC {\'o}n T\IeC {\'e}cnica SOA}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}El Problema}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis del Problema}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Procesadores}{15}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Datacore}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Storage}{15}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Especificaci\IeC {\'o}n de la Soluci\IeC {\'o}n}{15}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Requisitos de Informaci\IeC {\'o}n del Sistema}{15}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Requisitos Funcionales del Sistema}{16}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Requisitos No Funcionales del Sistema}{16}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Implementaci\IeC {\'o}n y Tecnol\IeC {\'o}gia}{17}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Procesadores}{17}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Datacore}{17}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Store}{17}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Virtualizaci\IeC {\'o}n}{18}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5} Construcci\IeC {\'o}n }{18}{section.3.5}
+\contentsline {section}{\numberline {3.6}Caso de Uso}{23}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Step-1: Servicios Disponibles}{25}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Step-2: Gesti\IeC {\'o}n de Datasets}{26}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Step-3: Operaciones}{28}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Conclusiones}{30}{section.3.7}
+\contentsline {chapter}{\numberline {4}Entrega}{31}{chapter.4}

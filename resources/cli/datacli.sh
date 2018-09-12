@@ -31,9 +31,9 @@ function Datarestful_getDataset() {
 }
 
 function Datarestful_getDatasetByTitle() {
-  ID=$1
+  T=$1
   curl -X GET  \
-    "http://$HOST:$PORT/Search/$ID" \
+    "http://$HOST:$PORT/Search/$T" \
     -H 'Content-Type: application/json' \
     -H 'Accept: application/json'
 }
@@ -81,6 +81,6 @@ function Datarestful_operation() {
 	    "dataset_id": "'$ID'",
 	    "value": "'$VALUE'",
 	    "operator": "'$OPE'",
-	    "service_url":  "'URL'"
+	    "service_url":  "'$URL'"
     }'
 }
